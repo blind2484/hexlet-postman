@@ -2655,6 +2655,22 @@
 				},
 				{
 					"name": "User Service list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a3390071-66f7-4792-8e18-8bca3f09f57e",
+								"exec": [
+									"pm.test('Status code is 200', () => {\r",
+									"  pm.expect(pm.response.code).to.equal(200)\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "cdb1a19d-e9bd-4437-8a5b-f3b06637b1bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
