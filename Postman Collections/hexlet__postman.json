@@ -2413,6 +2413,46 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n  \"id\": 3307,\n  \"email\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\"\n}"
+								},
+								{
+									"id": "5d1a8534-3776-4acf-a25c-0f0ca0ce23a4",
+									"name": "User Service get",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/:id?select=string",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"query": [
+												{
+													"key": "select",
+													"value": "string"
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "string"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
@@ -2771,48 +2811,6 @@
 				}
 			],
 			"id": "c1804fd9-3921-48c4-9aa5-38f2070b8716"
-		},
-		{
-			"name": "New Request",
-			"id": "41b4624c-785f-4ee7-b38d-769161496c74",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}?dsf=33",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"query": [
-						{
-							"key": "dsf",
-							"value": "33"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "c7546fc4-878b-4bac-ae47-7e39e4665afd",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json"
-					}
-				],
-				"url": "{{baseUrl}}/users"
-			},
-			"response": []
 		}
 	],
 	"auth": {
