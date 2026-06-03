@@ -2443,16 +2443,22 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": "string"
+													"value": "100"
 												}
 											]
 										}
 									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
+									"_postman_previewlanguage": "",
+									"header": [],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
 									"responseTime": null,
-									"body": null
+									"body": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Smith\",\r\n    \"email\": \"John@main.com\"\r\n}"
 								}
 							]
 						},
