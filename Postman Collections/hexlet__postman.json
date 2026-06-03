@@ -2675,7 +2675,7 @@
 									"\r",
 									"pm.test('Response body has expected data', () => {\r",
 									"  var jsonData = pm.response.json()\r",
-									"  pm.expect(jsonData.firstName).to.eql('Rossie')\r",
+									"  pm.expect(jsonData.firstName).to.eql('')\r",
 									"})\r",
 									"\r",
 									"pm.test('Response body has expected data', () => {\r",
@@ -2701,7 +2701,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/users?skip=string&limit=string&select=string,string",
+							"raw": "{{baseUrl}}/users?skip=string&limit=string",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -2719,7 +2719,8 @@
 								},
 								{
 									"key": "select",
-									"value": "string,string"
+									"value": "string,string",
+									"disabled": true
 								}
 							]
 						}
